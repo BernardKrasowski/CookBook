@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './recipe.module.css'
+import CountUp from 'react-countup'
 
 const Recipe = ({ title, calories, image, ingredients }) => {
   return (
@@ -11,7 +12,9 @@ const Recipe = ({ title, calories, image, ingredients }) => {
           <li>{ingr.text}</li>
         ))}
       </ol>
-      <p>{calories}</p>
+      <p>
+        <CountUp start={0} end={calories} duration={1.5} seperator="," />
+      </p>
       <img className={style.img} src={image} alt="Meal" />
     </div>
   );
