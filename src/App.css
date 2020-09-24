@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+.app {
+    min-height: 100vh;
 }
+.search-form{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar{
+    width: 50vw;
+    padding: 10px;
+}
+.search-button{
+    background-color: white;
+    border: none;
+    background-color: rgb(61, 61, 250);
+    padding: 15px 40px;
+    color: white;
+    border-radius: 10%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.recipes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
